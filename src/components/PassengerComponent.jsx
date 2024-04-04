@@ -86,6 +86,12 @@ useEffect(() => {
     createPassenger(passenger).then((response)=>{
       console.log(response.data);
      setPage(response.data);
+         setFullName("");
+          setDob("");
+          setEmail("");
+          setGender("");
+          setPhoneNumber("");
+          setSeatNo(0);
     }) 
     const passenger_id={fullName,dob,email,gender,phoneNumber,seatNo};
      const booking={busName,busNumber,fromDeparture,toDeparture,ticketPrice, busDate,bookingDate,passenger_id,email};
